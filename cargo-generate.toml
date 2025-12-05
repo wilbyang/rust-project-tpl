@@ -21,8 +21,9 @@ type = "string"
 prompt = "Project description?"
 default = "A Rust application with CLI, config, logging, and tests"
 
-[conditional.'true']
+[template]
 ignore = [
+    ".github/workflows/*",
     "target",
     "logs/*.log",
     ".git"
