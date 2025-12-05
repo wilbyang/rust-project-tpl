@@ -1,0 +1,10 @@
+# Development environment configuration
+[app]
+environment = "development"
+
+[logging]
+level = "debug"
+format = "text"
+
+[server]
+port = 8081

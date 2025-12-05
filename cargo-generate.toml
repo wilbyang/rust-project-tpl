@@ -1,0 +1,29 @@
+[template]
+cargo_generate_version = ">=0.10.0"
+
+[placeholders.project_name]
+type = "string"
+prompt = "What is the name of your project?"
+default = "my-rust-project"
+
+[placeholders.author_name]
+type = "string"
+prompt = "Author name?"
+default = "Your Name"
+
+[placeholders.author_email]
+type = "string"
+prompt = "Author email?"
+default = "your.email@example.com"
+
+[placeholders.project_description]
+type = "string"
+prompt = "Project description?"
+default = "A Rust application with CLI, config, logging, and tests"
+
+[conditional.'true']
+ignore = [
+    "target",
+    "logs/*.log",
+    ".git"
+]

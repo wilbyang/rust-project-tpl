@@ -1,0 +1,21 @@
+# Default configuration file
+[app]
+name = "project-tpl"
+version = "0.1.0"
+environment = "development"
+
+[server]
+host = "127.0.0.1"
+port = 8080
+timeout = 30
+
+[database]
+url = "postgres://localhost/mydb"
+max_connections = 10
+min_connections = 2
+
+[logging]
+level = "info"
+format = "json"  # Options: json, text
+file_output = true
+console_output = true

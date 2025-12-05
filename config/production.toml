@@ -1,0 +1,16 @@
+# Production environment configuration
+[app]
+environment = "production"
+
+[logging]
+level = "info"
+format = "json"
+file_output = true
+console_output = false
+
+[server]
+port = 8080
+timeout = 60
+
+[database]
+max_connections = 50
