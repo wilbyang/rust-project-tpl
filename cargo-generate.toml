@@ -1,5 +1,11 @@
 [template]
 cargo_generate_version = ">=0.10.0"
+ignore = [
+    ".github/workflows/*",
+    "target",
+    "logs/*.log",
+    ".git"
+]
 
 [placeholders.project_name]
 type = "string"
@@ -20,11 +26,3 @@ default = "your.email@example.com"
 type = "string"
 prompt = "Project description?"
 default = "A Rust application with CLI, config, logging, and tests"
-
-[template]
-ignore = [
-    ".github/workflows/*",
-    "target",
-    "logs/*.log",
-    ".git"
-]
